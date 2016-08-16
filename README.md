@@ -1,6 +1,6 @@
 # Description of Files
 
-This repository contains Eugene files specifying designs for the repressilator (Elowitz and Leibler), recombinase state machines (RSMs) (Roquet et al.) , and dual-feedback oscillator (Stricker et al.). In particular, one design is specified for the repressilator, eight designs are specified for 2 input, 5 state RSMs, three designs are specified for 3 input, 16 state RSMs, and six design are specified for the dual-feedback oscillator. The vector backbone and input plasmids of the RSMs are not included. The RSM designs are unique, non-permuted variants, while the oscillator designs vary the order of the same three transcriptional units with alternating orientations.
+This repository contains Eugene files specifying designs for the repressilator (Elowitz and Leibler), recombinase state machines (RSMs) (Roquet et al.) , and dual-feedback oscillator (Stricker et al.). In particular, one design is specified for the repressilator, eight designs are specified for 2 input, 5 state RSMs, three designs are specified for 3 input, 16 state RSMs, and six designs are specified for the dual-feedback oscillator. The vector backbone and input plasmids of the RSMs are not included. The RSM designs are unique, non-permuted variants, while the oscillator designs vary the order of the same three transcriptional units with alternating orientations.
 
 # Issues with Eugene
 
