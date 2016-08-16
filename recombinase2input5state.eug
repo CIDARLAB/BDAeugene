@@ -1,0 +1,194 @@
+// Part properties
+
+Property SEQUENCE(txt);
+
+// Part types
+
+PartType Promoter(SEQUENCE);
+
+PartType RecombinaseRecognitionSite(SEQUENCE);
+
+PartType CDS(SEQUENCE);
+
+PartType Terminator(SEQUENCE);
+
+// Parts
+
+// Coding sequences
+
+CDS GFPmut3b("atgagtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgatctctacaaataa");
+
+CDS mTagBFP("atgagcgagctgattaaggagaacatgcacatgaagctgtacatggagggcaccgtggacaaccatcacttcaagtgcacatccgagggcgaaggcaagccctacgagggcacccagaccatgagaatcaaggtggtcgagggcggccctctccccttcgccttcgacatcctggctactagcttcctctacggcagcaagaccttcatcaaccacacccagggcatccccgacttcttcaagcagtccttccctgagggcttcacatgggagagagtcaccacatacgaagacgggggcgtgctgaccgctacccaggacaccagcctccaggacggctgcctcatctacaacgtcaagatcagaggggtgaacttcacatccaacggccctgtgatgcagaagaaaacactcggctgggaggccttcaccgagacgctgtaccccgctgacggcggcctggaaggcagaaacgacatggccctgaagctcgtgggcgggagccatctgatcgcaaacatcaagaccacatatagatccaagaaacccgctaagaacctcaagatgcctggcgtctactatgtggactacagactggaaagaatcaaggaggccaacaacgagacctacgtcgagcagcacgaggtggcagtggccagatactgcgacctccctagcaaactggggcactaa");
+
+CDS mRFP("atgtccagattagataaaagtaaagttgcgagctctgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctaaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaataa");
+
+// Promoters
+
+Promoter proD("cacagctaacaccacgtcgtccctatctgctgccctaggtctatgagtggttgctggataactttacgggcatgcataaggctcgtataatatattcagggagaccacaacggtttccctctacaaataattttgtttaacttt");
+
+Promoter proNR3("taacaccgtgcgtttgactattttacctctggcggtgataatggttgcatatagtgaacaaggattaa");
+
+Promoter proNR4("ccgtgacggatcctggtgcaaaacctttcgcggtatggcatgatagcgccataggttaaaagccagacat");
+
+// Recombinase recognition sites
+
+RecombinaseRecognitionSite BxbIB_CA("cggccggcttgtcgacgacggcgcactccgtcgtcaggatcatccgggc");
+
+RecombinaseRecognitionSite BxbIP_CA("gtcgtggtttgtctggtcaaccaccgcgcactcagtggtgtacggtacaaaccccgac");
+
+RecombinaseRecognitionSite BxbIB_GT("cggccggcttgtcgacgacggcggtctccgtcgtcaggatcatccgggc");
+
+RecombinaseRecognitionSite BxbIP_GT("gtcgtggtttgtctggtcaaccaccgcggtctcagtggtgtacggtacaaaccccgac");
+
+RecombinaseRecognitionSite TP901B_AG("atgccaacacaattaacatcagaatcaaggtaaatgctttttgctttttttgc");
+
+RecombinaseRecognitionSite TP901P_AG("gcgagtttttatttcgtttattagaattaaggtaactaaaaaactccttt");
+
+RecombinaseRecognitionSite TP901B_TC("atgccaacacaattaacatctcaatcaaggtaaatgctttttgctttttttgc");
+
+RecombinaseRecognitionSite TP901P_TC("gcgagtttttatttcgtttatttcaattaaggtaactaaaaaactccttt");
+
+RecombinaseRecognitionSite A118B_AA("aacttttcggatcaagctatgaaaaacgcaaagagggaactaaacactt");
+
+RecombinaseRecognitionSite A118P_AA("ttagttcctcgttttctctcgttaaaagaagaagaaacgagaaactaaa");
+
+RecombinaseRecognitionSite A118B_GG("aacttttcggatcaagctatgaaggacgcaaagagggaactaaacactt");
+
+RecombinaseRecognitionSite A118P_GG("ttagttcctcgttttctctcgttggaagaagaagaaacgagaaactaaa");
+
+// Terminators
+
+Terminator B0062_R("cagataaaaaaaatccttagctttcgctaaggatgatttct");
+
+Terminator ECK120010850("agttaaccaaaaaggggggattttatctcccctttaatttttcct");
+
+Terminator ECK120010825("atctcctttcacggcccattcctcatggatgggccgtttatttccc");
+
+Terminator ECK120030221("cccgcacttaacccgcttcggcgggtttttgttttt");
+
+Terminator ECK120010799("gttatgagtcaggaaaaaaggcgacagagtaatctgtcgccttttttctttgcttgcttt");
+
+Terminator ECK120010818("gtcagtttcacctgttttacgtaaaaacccgcttcggcgggtttttacttttgg");
+
+Terminator ECK120033737("ggaaacacagaaaaaagcccgcacctgacagtgcgggctttttttttcgaccaaagg");
+
+Terminator B0010("ccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctc");
+
+Terminator ECK120029600("ttcagccaaaaaacttaagaccgccggtcttgtccactaccttgcagtaatgcggtggacaggatcggcggttttcttttctcttctcaa");
+
+Terminator ECK120033736("aacgcatgagaaagcccccggaagatcaccttccgggggcttttttattgcgc");
+
+Terminator ECK120016586("aagaacgagtaaaaggtcggtttaaccggcctttttattttgtga");
+
+Terminator ilvBN("aagacccccgcaccgaaaggtccgggggtttttttt");
+
+Terminator ECK120010782("acctgtaaaaaaggcagccatctggctgccttagtctcccca");
+
+Terminator ECK120015440("tccggcaattaaaaaagcggctaaccacgccgctttttttacgtctgca");
+
+Terminator ECK120010876("taaggttgaaaaataaaaacggcgctaaaaagcgccgttttttttgacggtggta");
+
+Terminator ECK120015170("acaattttcgaaaaaacccgcttcggcgggtttttttatagctaaaa");
+
+Terminator pyrBI("agcccctcaatcgaggggcttttttttgc");
+
+Terminator ECK120026481("taccaccgtcaaaaaaaacggcgctttttagcgccgtttttatttttcaacctt");
+
+Terminator ECK120015444("acatttaataaaaaaagggcggtcgcaagatcgcccttttttacgtatgaca");
+
+Terminator ECK120016882("tgtgaaaaagcccgcgcaagcgggtttttttatg");
+
+// Devices
+
+// 2 inputs, 5 states, length 12
+Device rsmOutput160(B0062_R, ECK120010850, ECK120010825, TP901B_TC, TP901B_AG, BxbIB_GT, TP901P_AG, BxbIP_GT, TP901P_TC, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 19
+Device rsmOutput163(B0062_R, ECK120010850, ECK120010825, proNR3, TP901B_TC, ECK120033737, GFPmut3b, TP901B_AG, BxbIB_GT, TP901P_AG, proD, B0010, ECK120029600, ECK120033736, BxbIP_GT, TP901P_TC, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 22
+Device rsmOutput186(B0062_R, ECK120010850, ECK120010825, TP901B_TC, TP901B_AG, proNR3, proD, BxbIB_GT, TP901P_AG, ECK120016586, ilvBN, ECK120010782, BxbIP_GT, ECK120015440, ECK120010876, ECK120015170, TP901P_TC, GFPmut3b, ECK120033737, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 16
+Device rsmOutput165(B0062_R, ECK120010850, ECK120010825, ECK120033737, GFPmut3b, TP901B_TC, proNR3, TP901B_AG, BxbIB_GT, TP901P_AG, proD, BxbIP_GT, TP901P_TC, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 19
+Device rsmOutput164(B0062_R, ECK120010850, ECK120010825, proNR3, TP901B_TC, TP901B_AG, BxbIB_GT, TP901P_AG, proD, B0010, ECK120029600, ECK120033736, BxbIP_GT, GFPmut3b, ECK120033737, TP901P_TC, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 26
+Device rsmOutput291(B0062_R, ECK120010850, ECK120010825, ECK120033737, GFPmut3b, TP901B_TC, pyrBI, ECK120026481, ECK120015444, proNR4, TP901B_AG, mTagBFP, ECK120016882, proNR3, BxbIB_GT, ECK120010782, ilvBN, ECK120016586, mRFP, TP901P_AG, BxbIP_GT, TP901P_TC, proD, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 19
+Device rsmOutput166(B0062_R, ECK120010850, ECK120010825, TP901B_TC, TP901B_AG, GFPmut3b, ECK120033737, BxbIB_GT, ECK120033736, ECK120029600, B0010, TP901P_AG, BxbIP_GT, proNR3, TP901P_TC, proD, ECK120030221, ECK120010799, ECK120010818);
+
+// 2 inputs, 5 states, length 21
+Device rsmOutput187(B0062_R, ECK120010850, ECK120010825, ECK120033737, GFPmut3b, TP901B_TC, ECK120033736, ECK120029600, B0010, proD, TP901B_AG, BxbIB_GT, ECK120015170, ECK120010876, ECK120015440, TP901P_AG, BxbIP_GT, TP901P_TC, ECK120030221, ECK120010799, ECK120010818);
+
+// Rules
+
+Rule rsmOutput160Rules(ON rsmOutput160:
+	ALL_FORWARD
+);
+
+Rule rsmOutput163Rules(ON rsmOutput163:
+	ALL_FORWARD
+);
+
+Rule rsmOutput186Rules(ON rsmOutput186:
+	ALL_FORWARD
+);
+
+Rule rsmOutput165ules(ON rsmOutput165:
+	ALL_FORWARD
+);
+
+Rule rsmOutput164Rules(ON rsmOutput164:
+	ALL_FORWARD
+);
+
+Rule rsmOutput291Rules(ON rsmOutput291:
+	ALL_FORWARD
+);
+
+Rule rsmOutput166Rules(ON rsmOutput166:
+	ALL_FORWARD
+);
+
+Rule rsmOutput187Rules(ON rsmOutput187:
+	ALL_FORWARD
+);
+
+// Enumerate devices
+
+result = product(rsmOutput160);
+
+result = result + product(rsmOutput163);
+
+result = result + product(rsmOutput186);
+
+result = result + product(rsmOutput165);
+
+result = result + product(rsmOutput164);
+
+result = result + product(rsmOutput291);
+
+result = result + product(rsmOutput166);
+
+result = result + product(rsmOutput187);
+
+// Print devices
+
+println("Number of devices: " + SIZEOF(result));
+
+println(result);
+
+// Visualize devices
+
+for(num i = 0; i < SIZEOF(result); i = i + 1) {
+   SBOL.visualize(result[i]);
+}
+
+// Export devices to SBOL
+
+SBOL.export(result, "./sbol/rsmOutput2inputs5states.xml");
+

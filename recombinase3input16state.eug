@@ -1,0 +1,121 @@
+// Part properties
+
+Property SEQUENCE(txt);
+
+// Part types
+
+PartType Promoter(SEQUENCE);
+
+PartType RecombinaseRecognitionSite(SEQUENCE);
+
+PartType CDS(SEQUENCE);
+
+PartType Terminator(SEQUENCE);
+
+// Parts
+
+// Coding sequences
+
+CDS mTagBFP("atgagcgagctgattaaggagaacatgcacatgaagctgtacatggagggcaccgtggacaaccatcacttcaagtgcacatccgagggcgaaggcaagccctacgagggcacccagaccatgagaatcaaggtggtcgagggcggccctctccccttcgccttcgacatcctggctactagcttcctctacggcagcaagaccttcatcaaccacacccagggcatccccgacttcttcaagcagtccttccctgagggcttcacatgggagagagtcaccacatacgaagacgggggcgtgctgaccgctacccaggacaccagcctccaggacggctgcctcatctacaacgtcaagatcagaggggtgaacttcacatccaacggccctgtgatgcagaagaaaacactcggctgggaggccttcaccgagacgctgtaccccgctgacggcggcctggaaggcagaaacgacatggccctgaagctcgtgggcgggagccatctgatcgcaaacatcaagaccacatatagatccaagaaacccgctaagaacctcaagatgcctggcgtctactatgtggactacagactggaaagaatcaaggaggccaacaacgagacctacgtcgagcagcacgaggtggcagtggccagatactgcgacctccctagcaaactggggcactaa");
+
+CDS GFPmut3b("atgagtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgatctctacaaataa");
+
+// Promoters
+
+Promoter proD("cacagctaacaccacgtcgtccctatctgctgccctaggtctatgagtggttgctggataactttacgggcatgcataaggctcgtataatatattcagggagaccacaacggtttccctctacaaataattttgtttaacttt");
+
+Promoter proNR4("ccgtgacggatcctggtgcaaaacctttcgcggtatggcatgatagcgccataggttaaaagccagacat");
+
+// Recombinase recognition sites
+
+RecombinaseRecognitionSite BxbIB_CA("cggccggcttgtcgacgacggcgcactccgtcgtcaggatcatccgggc");
+
+RecombinaseRecognitionSite TP901B_AG("atgccaacacaattaacatcagaatcaaggtaaatgctttttgctttttttgc");
+
+RecombinaseRecognitionSite BxbIP_CA("gtcgtggtttgtctggtcaaccaccgcgcactcagtggtgtacggtacaaaccccgac");
+
+RecombinaseRecognitionSite TP901P_AG("gcgagtttttatttcgtttattagaattaaggtaactaaaaaactccttt");
+
+RecombinaseRecognitionSite A118B_AA("aacttttcggatcaagctatgaaaaacgcaaagagggaactaaacactt");
+
+RecombinaseRecognitionSite BxbIB_GT("cggccggcttgtcgacgacggcggtctccgtcgtcaggatcatccgggc");
+
+RecombinaseRecognitionSite A118P_AA("ttagttcctcgttttctctcgttaaaagaagaagaaacgagaaactaaa");
+
+RecombinaseRecognitionSite BxbIP_GT("gtcgtggtttgtctggtcaaccaccgcggtctcagtggtgtacggtacaaaccccgac");
+
+RecombinaseRecognitionSite TP901B_TC("atgccaacacaattaacatctcaatcaaggtaaatgctttttgctttttttgc");
+
+RecombinaseRecognitionSite A118B_GG("aacttttcggatcaagctatgaaggacgcaaagagggaactaaacactt");
+
+RecombinaseRecognitionSite TP901P_TC("gcgagtttttatttcgtttatttcaattaaggtaactaaaaaactccttt");
+
+RecombinaseRecognitionSite A118P_GG("ttagttcctcgttttctctcgttggaagaagaagaaacgagaaactaaa");
+
+// Terminators
+
+Terminator B0062_R("cagataaaaaaaatccttagctttcgctaaggatgatttct");
+
+Terminator ECK120010850("agttaaccaaaaaggggggattttatctcccctttaatttttcct");
+
+Terminator ECK120010825("atctcctttcacggcccattcctcatggatgggccgtttatttccc");
+
+Terminator ECK120030221("cccgcacttaacccgcttcggcgggtttttgttttt");
+
+Terminator ECK120010799("gttatgagtcaggaaaaaaggcgacagagtaatctgtcgccttttttctttgcttgcttt");
+
+Terminator ECK120010818("gtcagtttcacctgttttacgtaaaaacccgcttcggcgggtttttacttttgg");
+
+Terminator ECK120016882("tgtgaaaaagcccgcgcaagcgggtttttttatg");
+
+Terminator ECK120033737("ggaaacacagaaaaaagcccgcacctgacagtgcgggctttttttttcgaccaaagg");
+
+// Devices
+
+// 3 inputs, 16 states, length 18
+Device rsmOutput188(B0062_R, ECK120010850, ECK120010825, BxbIB_CA, TP901B_AG, BxbIP_CA, TP901P_AG, A118B_AA, BxbIB_GT, A118P_AA, BxbIP_GT, TP901B_TC, A118B_GG, TP901P_TC, A118P_GG, ECK120030221, ECK120010799, ECK120010818);
+
+// 3 inputs, 16 states, length 21
+Device rsmOutput292(B0062_R, ECK120010850, ECK120010825, BxbIB_CA, TP901B_AG, BxbIP_CA, TP901P_AG, A118B_AA, BxbIB_GT, A118P_AA, proD, BxbIP_GT, TP901B_TC, A118B_GG, ECK120016882, mTagBFP, TP901P_TC, A118P_GG, ECK120030221, ECK120010799, ECK120010818);
+
+// 3 inputs, 16 states, length 22
+Device rsmOutput284(B0062_R, ECK120010850, ECK120010825, BxbIB_CA, proNR4, TP901B_AG, BxbIP_CA, TP901P_AG, A118B_AA, BxbIB_GT, GFPmut3b, ECK120033737, A118P_AA, BxbIP_GT, TP901B_TC, A118B_GG, proD, TP901P_TC, A118P_GG, ECK120030221, ECK120010799, ECK120010818);
+
+// Rules
+
+Rule rsmOutput188Rules(ON rsmOutput188:
+	ALL_FORWARD
+);
+
+Rule rsmOutput292Rules(ON rsmOutput292:
+	ALL_FORWARD
+);
+
+Rule rsmOutput284Rules(ON rsmOutput284:
+	ALL_FORWARD
+);
+
+// Enumerate devices
+
+result = product(rsmOutput188);
+
+result = result + product(rsmOutput292);
+
+result = result + product(rsmOutput284);
+
+// Print devices
+
+println("Number of devices: " + SIZEOF(result));
+
+println(result);
+
+// Visualize devices
+
+for(num i = 0; i < SIZEOF(result); i = i + 1) {
+   SBOL.visualize(result[i]);
+}
+
+// Export devices to SBOL
+
+SBOL.export(result, "./sbol/rsmOutput3inputs16states.xml");
+
